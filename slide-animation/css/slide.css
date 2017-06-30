@@ -1,0 +1,78 @@
+*{margin:0; padding: 0;text-align: center;}
+li{
+	list-style: none;
+}
+.mod-test{
+	position: relative;
+}
+.testlistwrapper{
+	max-width: 100%;
+	width: 420px;
+	height: 420px;
+	margin: 100px auto;
+	overflow: hidden;
+}
+.testlistwrapper .test-list{
+	width: 600%;
+	height: 420px;
+	transition: all 0.5s ease-out;
+}
+.testlistwrapper .test-list .test-item{
+	float: left;
+	width: 420px;
+	height: 100%;
+}
+.testlistwrapper .test-list .item1{
+	background:#aaf;
+}
+.testlistwrapper .test-list .item2{
+	background:#aff;
+}
+.testlistwrapper .test-list .item3{
+	background:#fdd;
+}
+.testlistwrapper .test-list .item4{
+	background:#1aa;
+}
+.control-btns{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -275px;
+	margin-top: -25px;
+	width: 550px;
+	height: 50px;
+	z-index: 2;
+}
+.prev-btn,.next-btn{
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 25px;
+	background: #aaa;
+	opacity: 0.6;
+	color: #fff;
+	font-size: 22px;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover{
+	opacity: 1;
+}
+.prev-btn{
+	float: left;
+}
+.next-btn{
+	float: right;
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px){
+	.testlistwrapper .test-list .test-item{
+		width: 16.6666%;
+	}	
+	.control-btns{
+		display: none;
+	}
+}
